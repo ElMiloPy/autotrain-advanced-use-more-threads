@@ -258,7 +258,7 @@ def launch_command(params):
                 "--num_machines",
                 "1",
                 "--num_processes",
-                "1",
+                "16",
             ]
         else:
             cmd = [
