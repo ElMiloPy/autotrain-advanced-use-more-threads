@@ -31,7 +31,7 @@ SINGLE_GPU_COMMAND = [
     "--num_machines",
     "1",
     "--num_processes",
-    "1",
+    "8",
 ]
 
 
@@ -186,7 +186,7 @@ def launch_command(params):
                 "--num_machines",
                 "1",
                 "--num_processes",
-                "1",
+                "8",
             ]
         else:
             cmd = [
@@ -258,7 +258,7 @@ def launch_command(params):
                 "--num_machines",
                 "1",
                 "--num_processes",
-                "16",
+                "8",
             ]
         else:
             cmd = [
@@ -306,7 +306,7 @@ def launch_command(params):
                 "--num_machines",
                 "1",
                 "--num_processes",
-                "1",
+                "8",
             ]
         else:
             cmd = [
@@ -380,7 +380,7 @@ def launch_command(params):
                 "--num_machines",
                 "1",
                 "--num_processes",
-                "2",
+                "8",
             ]
         else:
             if params.quantization in ("int8", "int4") and params.peft and params.mixed_precision == "bf16":
@@ -446,7 +446,7 @@ def launch_command(params):
                 "--num_machines",
                 "1",
                 "--num_processes",
-                "1",
+                "8",
             ]
         elif num_gpus == 2:
             cmd = [
@@ -456,7 +456,7 @@ def launch_command(params):
                 "--num_machines",
                 "1",
                 "--num_processes",
-                "2",
+                "8",
             ]
         else:
             if params.quantization in ("int8", "int4") and params.peft and params.mixed_precision == "bf16":
